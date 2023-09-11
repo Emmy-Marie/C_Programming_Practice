@@ -40,7 +40,7 @@ Here's a simple example of using some of these functions:
 #include <string.h>
 
 int main() {
-    char str1[30] = "Hello, I'm Nnaemeka.";
+    char str1[40] = "Hello, I'm Nnaemeka.";
     char str2[] = " Nice to meet you!";
     
     strcat(str1, str2); // Concatenate str2 to the end of str1
