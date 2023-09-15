@@ -1,4 +1,3 @@
-```markdown
 # C Programming Study and Practice
 
 Welcome to my C Programming Study and Practice repository! This repository was designed to help me learn and practice C programming effectively. As a beginner I wanted to sharpen my C skills.
@@ -69,6 +68,6 @@ Contributions to this repository are highly encouraged. If you have code example
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Happy coding, and hope you enjoy your journey in learning and mastering C programming like I do!
-```
+
 
 This README.md script provides an overview of the repository's purpose, getting started instructions, recommended learning resources, coding challenges, project ideas, and guidelines for contributing. You can customize it to fit your specific repository and goals.
