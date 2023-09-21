@@ -35,7 +35,7 @@ Understand how to access and manipulate data using pointers:
 Discover how to perform arithmetic operations on pointers:
 
 - **Increment and Decrement:** `ptr++; ptr--;`
-- **Pointer Arithmetic with Arrays:** `ptr + n;`
+- **Pointer Arithmetic with Arrays:** `ptr + n; ptr - n; ptr_1 - ptr_2;`
 
 ## Pointers and Functions
 
