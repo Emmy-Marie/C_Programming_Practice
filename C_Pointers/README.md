@@ -6,6 +6,7 @@ Welcome to the C Pointers repository! This repository is designed to help us und
 - [Introduction](#introduction)
 - [Declaring and Initializing Pointers](#declaring-and-initializing-pointers)
 - [Dereferencing Pointers](#dereferencing-pointers)
+- [Types of Pointers](#types-of-pointers)
 - [Pointer Arithmetic](#pointer-arithmetic)
 - [Pointers and Functions](#pointers-and-functions)
 - [Examples](#examples)
@@ -28,6 +29,13 @@ Learn how to declare and initialize pointers to different data types:
 Understand how to access and manipulate data using pointers:
 
 - **Dereferencing:** `int value = *ptr;`
+- **Modifying Data:** `*ptr = newValue;`
+
+## Types of Pointers
+
+Understand the various types of pointers:
+
+- **Void Pointers:** A void pointer in C does not have a specific data type associated with it. Void pointers to point to objects of any data type, but we cannot directly dereference or manipulate the data pointed to by a void pointer. To use the data pointed to by a void pointer, we must explicitly cast it to the appropriate data type. This casting is necessary to inform the compiler about the data type and size of the object. e.g. of typecasting a void pointer: `*(Int *)ptr;`
 - **Modifying Data:** `*ptr = newValue;`
 
 ## Pointer Arithmetic
