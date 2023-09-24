@@ -36,7 +36,7 @@ Understand how to access and manipulate data using pointers:
 Understand the various types of pointers:
 
 - **Void Pointers:** A void pointer in C does not have a specific data type associated with it. Void pointers to point to objects of any data type, but we cannot directly dereference or manipulate the data pointed to by a void pointer. To use the data pointed to by a void pointer, we must explicitly cast it to the appropriate data type. This casting is necessary to inform the compiler about the data type and size of the object. e.g. of typecasting a void pointer: `*(Int *)ptr;`
-- **Modifying Data:** `*ptr = newValue;`
+- **NULL Pointers:** A NULL pointer in C is a pointer that does not point to any memory address or object. Attempting to dereference a NULL pointer (accessing the data it points to) will result in undefined behavior, typically leading to program crashes or unpredictable results. Therefore, it's essential to check whether a pointer is NULL before attempting to use it to avoid such issues.`int *ptr = NULL;`
 
 ## Pointer Arithmetic
 
