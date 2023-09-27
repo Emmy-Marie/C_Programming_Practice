@@ -91,6 +91,48 @@ To use a function, you call it by its name followed by parentheses. If the funct
 int result = add(5, 3);
 ```
 
+A function can be called either by value or by reference;
+
+- **Function Call by Value**: This is a parameter-passing mechanism used in programming languages like C and C++. In this mechanism, when you pass an argument to a function, you are passing the value of the argument to the function, not the actual variable itself. This means that changes made to the parameter inside the function do not affect the original variable outside the function.
+
+```c
+#include <stdio.h>
+
+void modifyValue(int x) {
+    x = x * 2; // Modifying the parameter 'x'
+}
+
+int main() {
+    int num = 5;
+
+    printf("Before calling modifyValue: %d\n", num);
+    modifyValue(num); // Function call by value
+    printf("After calling modifyValue: %d\n", num); // 'num' remains unchanged
+
+    return 0;
+}
+```
+
+- **Function Call by Reference**: is a parameter-passing mechanism in programming where a function receives a reference or address of a variable as an argument. In other words, when you pass an argument to a function by reference, you are passing the memory address of the variable, allowing the function to directly access and modify the original variable's value. In C, function call by reference is achieved by passing pointers to variables as function arguments.
+
+```c
+#include <stdio.h>
+
+void modifyValueByReference(int *x) {
+    (*x) = (*x) * 2; // Modifying the original variable 'num' using a pointer
+}
+
+int main() {
+    int num = 5;
+
+    printf("Before calling modifyValueByReference: %d\n", num);
+    modifyValueByReference(&num); // Function call by reference using a pointer
+    printf("After calling modifyValueByReference: %d\n", num); // 'num' has been modified
+
+    return 0;
+}
+
+```
 ## Examples
 
 Check out some common examples of functions in C programming:
