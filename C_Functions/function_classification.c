@@ -9,7 +9,7 @@
 /* Function declarations */
 void add(void);
 int subtract(void);
-void multiply(void);
+void multiply(int, int);
 void divide(void);
 
 int main(void)
@@ -23,7 +23,8 @@ int main(void)
 	difference = subtract();
 	printf("Difference: 10 - 20 = %d\n", difference);
 
-	multiply();
+	/* With Argument Without Return Type Function */
+	multiply(10, 20);
 	divide();
 	return (0);
 }
@@ -58,10 +59,13 @@ int subtract(void)
 
 /**
  * multiply - A function that multiplies two numbers and prints the result.
+ *            This is a function with arguments and without return type.
+ * @a: First interger
+ * @b: Second integer
  */
-void multiply(void)
+void multiply(int a, int b)
 {
-	int a = 10, b = 20, mul = 0;
+	int mul = 0;
 
 	mul = a * b;
 	printf("Multiplication: %d * %d = %d\n", a, b, mul);
