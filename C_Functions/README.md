@@ -12,6 +12,7 @@
 - [Function Parameters](#function-parameters)
 - [Return Values](#return-values)
 - [Function Call](#function-call)
+- [Function Classification](#function-classification)
 - [Examples](#examples)
 - [Conclusion](#conclusion)
 
@@ -133,6 +134,19 @@ int main() {
 }
 
 ```
+## Function Classification
+
+A function can be categorised into four(4) categories:
+
+- **No Argument No Return Type**: A function that takes no arguments and has no return type in C or C++ is often referred to as a "void function with no parameters." These functions are defined with the void keyword as the return type and no parameters in the parameter list. They perform a specific task or action without taking any input values or returning any results. e.g. `void functionName(void)`.
+
+- **No Argument With Return Type**: Functions like `printf` and `scanf` for input and output.
+
+- **With Argument No Return Type**: Creating your own functions to perform specific tasks.
+  
+- **With Argument With Return Type**: Creating your own functions to perform specific tasks.
+
+
 ## Examples
 
 Check out some common examples of functions in C programming:
