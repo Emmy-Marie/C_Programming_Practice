@@ -144,7 +144,7 @@ A function can be categorised into four(4) categories:
 
 - **With Argument No Return Type**: This type of function is often referred to as a "void function with arguments." These functions are defined with the void keyword as the return type, and they can accept one or more arguments. These functions perform specific tasks or actions based on the provided arguments but do not return any values. e.g. `void function_name(arg1, arg2, .....)`.
   
-- **With Argument With Return Type**: Creating your own functions to perform specific tasks.
+- **With Argument With Return Type**: This function takes arguments (parameters) and has a return type. This is one of the most common types of functions. These functions accept input values via parameters, perform some computation or operation based on those inputs, and then return a result of the specified return type. e.g. `int function_name(arg1, arg2, ....)`.
 
 
 ## Examples
