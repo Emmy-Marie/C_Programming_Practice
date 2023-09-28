@@ -10,22 +10,26 @@
 void add(void);
 int subtract(void);
 void multiply(int, int);
-void divide(void);
+int divide(int, int);
 
 int main(void)
 {
-	int difference = 0;
+	int difference = 0, division = 0;
 
-	/* No Argument Without Return Type Function */
+	/* No Argument & without Return Type Function */
 	add();
 
-	/* No Argument With Return Type Function */
+	/* No Argument & with Return Type Function */
 	difference = subtract();
 	printf("Difference: 10 - 20 = %d\n", difference);
 
-	/* With Argument Without Return Type Function */
+	/* With Argument & without Return Type Function */
 	multiply(10, 20);
-	divide();
+
+	/* With Argument & with Return Type Function */
+	division = divide(10, 20);
+	printf("Division: 20 / 10 = %d\n", division);
+
 	return (0);
 }
 
@@ -60,8 +64,8 @@ int subtract(void)
 /**
  * multiply - A function that multiplies two numbers and prints the result.
  *            This is a function with arguments and without return type.
- * @a: First interger
- * @b: Second integer
+ * @a: Multiplier
+ * @b: Multiplicand
  */
 void multiply(int a, int b)
 {
@@ -74,11 +78,14 @@ void multiply(int a, int b)
 /**
  * divide - A function that calculates the division of two numbers and prints
  *          the result.
+ * @a: Dividend
+ * @b: Divisor
+ * Return: The result of the division (div).
  */
-void divide(void)
+int divide(int a, int b)
 {
-	int a = 10, b = 20, div = 0;
+	int div = 0;
 
 	div = b / a;
-	printf("Division: %d / %d = %d\n", b, a, div);
+	return (div);
 }
