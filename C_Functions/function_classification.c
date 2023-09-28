@@ -2,20 +2,27 @@
 
 /**
  * main - A program that performs some basic mathematical operations using
- *        functions without arguments and without return type.
+ *        the 4 classification of functions.
  * Return: 0 for success.
  */
 
 /* Function declarations */
 void add(void);
-void subtract(void);
+int subtract(void);
 void multiply(void);
 void divide(void);
 
 int main(void)
 {
+	int difference = 0;
+
+	/* No Argument Without Return Type Function */
 	add();
-	subtract();
+
+	/* No Argument With Return Type Function */
+	difference = subtract();
+	printf("Difference: 10 - 20 = %d\n", difference);
+
 	multiply();
 	divide();
 	return (0);
@@ -24,7 +31,8 @@ int main(void)
 /* Function definitions */
 
 /**
- * add - A function that adds two numbers and prints the result.
+ * add - A function that adds two numbers and prints the result. This is a
+ *       function without return type and without argument.
  */
 void add(void)
 {
@@ -36,14 +44,16 @@ void add(void)
 
 /**
  * subtract - A function that calculates the difference between two numbers and
- *            prints the result.
+ *            returns the result. This is a function without argument and with
+ *            return type.
+ * Return: The difference between the two numbers (diff).
  */
-void subtract(void)
+int subtract(void)
 {
 	int a = 10, b = 20, diff = 0;
 
 	diff = a - b;
-	printf("Difference: %d - %d = %d\n", a, b, diff);
+	return (diff);
 }
 
 /**
