@@ -142,7 +142,7 @@ A function can be categorised into four(4) categories:
 
 - **No Argument With Return Type**: These functions are defined with a return type (other than void) and an empty parameter list to indicate that they don't require any input values, but they do return a result of the specified type. e.g. `return_type function_name(void)`.
 
-- **With Argument No Return Type**: Creating your own functions to perform specific tasks.
+- **With Argument No Return Type**: This type of function is often referred to as a "void function with arguments." These functions are defined with the void keyword as the return type, and they can accept one or more arguments. These functions perform specific tasks or actions based on the provided arguments but do not return any values. e.g. `void function_name(arg1, arg2, .....)`.
   
 - **With Argument With Return Type**: Creating your own functions to perform specific tasks.
 
